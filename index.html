@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="ui1">
+                <li>home</li>
+                <li>band</li>
+                <li>tour</li>
+                <li>contact</li>
+                <li id="more">more
+                        <div class="more-bar more-hide" >
+                            <p>Merchandise</p>
+                            <p>Extras</p>
+                            <p>Media</p>
+                        </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="first-part">
+            <div class="img-slide">
+                <img src="la.jpg" alt="" width="100%"/>
+                <div class="img-txt">
+                    <h3>Los Angeles</h3>
+                    <p>We had the best time playing at Venice Beach!</p>
+                </div>
+            </div>
+            <div class="img-slide">
+                <img src="ny.jpg" alt=""width="100%"/>
+                <div class="img-txt">
+                    <h3>New York</h3>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="img-slide">
+                <img src="chicago.jpg" alt="" width="100%"/>
+                <div class="img-txt">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+        </div>
+        <div id="sec-part">
+            <h2>The Band</h2>
+            <span>We love Music</span>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="third-part">
+            <div class="img-p3">
+                <p>Name</p>
+                <img src="bandmember.jpg" alt="" width="100%">
+            </div>
+            <div class="img-p3">
+                <p>Name</p>
+                <img src="bandmember.jpg" alt="" width="100%">
+            </div>
+            <div class="img-p3">
+                <p>Name</p>
+                <img src="bandmember.jpg" alt="" width="100%">
+            </div>
+            
+        </div>
+        <div id="forth-part">
+            <div class="layer1">
+                <h3>Tour dates</h3>
+                <p>Remember to book your tickets!</p>
+            </div>
+            <div class="layer2">
+                <p>September <span class="bg-clr">Sold Out</span></p>
+                <hr>
+                <p>October <span class="bg-clr">Sold Out</span></p>
+                <hr>
+                <p class="count">November <span>3</span></p>
+            </div>
+            <div class="layer3">
+                <div class="rows">
+                    <img src="newyork.jpg" alt="" width="100%" />
+                    <h4>New York</h4>
+                    <span>Fri 27 Nov 2016</span>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button onclick="document.querySelector('#ticket-popup').style.display='block'">Buy Tickets</button>
+                </div>
+                <div class="rows">
+                    <img src="paris.jpg" alt="" width="100%" />
+                    <h4>Paris</h4>
+                    <span>Sat 28 Nov 2016</span>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button onclick="document.querySelector('#ticket-popup').style.display='block'">Buy Tickets</button>
+                </div>
+                <div class="rows">
+                    <img src="sanfran.jpg" alt="" width="100%" />
+                    <h4>San Francisco</h4>
+                    <span>Sun 29 Nov 2016</span>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button onclick="document.querySelector('#ticket-popup').style.display='block'">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+        <div id="ticket-popup">
+            <header>
+                <h3>Ticket</h3>
+            </header>
+            <span class="cross close" onclick="document.querySelector('#ticket-popup').style.display='none'">x</span>
+            <p><label>Tickets, $15 per person</label></p>
+            <input class="input-txt" type="text" placeholder="How Many?">
+            <p><label>Send Mony</label></p>
+            <input class="input-email" type="email" placeholder="Enter email">
+            <button class="pay">PAY</button>
+            <div class="last">
+                <button class="close-btn" onclick="document.querySelector('#ticket-popup').style.display='none'">Close</button>
+                <p class="need-help">Need <a href="#" class="txt-blue">help?</a></p>
+            </div>
+        </div>
+        <div id="fifth-part">
+            <h3>Contact <span>Us</span></h3>
+            <p><i>Fan? Drop a note!</i></p>
+            <div class="box">
+                <div class="left">
+                    <p>Chicago, US</p>
+                    <p>Phone: +00 151515</p>
+                    <p>Email: mail@mail.com</p>
+                </div>
+                <div class="right">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="mail" placeholder="Email">
+                    <br>
+                    <textarea name="Message" id="msg">Message</textarea>
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Powered by <span>Himanshu Chauhan</span>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
